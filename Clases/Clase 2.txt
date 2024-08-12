@@ -1,0 +1,14 @@
+Variables de JavaScript
+-Let
+-Const
+-Var
+
+Condicionales
+- if ... else
+
+Operadores ternario, simplificación al manejar condicionales
+- (condicional)? true: false;
+
+-For, while, dowhile
+
+Comparativas

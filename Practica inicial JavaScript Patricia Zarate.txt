@@ -1,0 +1,36 @@
+//Actividad 1 Patricia Zarate.
+const numeros = []
+const fibonacci = [0,1]
+
+for (let i = 2; i <= 100; i ++){
+  if (i % 2 == 0){
+    let valorInicial1 = 0;
+    let valorInicial2 = 1;
+    while (valorInicial2 <= i){
+      if (valorInicial2 === i){
+        numeros.push(i+" "+"Fibonacci")
+        break
+      }
+      const suma = valorInicial1 + valorInicial2
+      valorInicial1 = valorInicial2
+      valorInicial2 = suma
+    }
+  }else {
+    let primo = true
+    if (i<=1){
+      primo = false
+      break
+    }
+    for (let j = 2; j*j <= i; j++){
+      if (i%j===0){
+        primo = false
+        break
+      }
+    }
+    if (primo){
+     numeros.push(i +" "+"Primo")
+    }
+  }
+}
+
+console.log(numeros);
