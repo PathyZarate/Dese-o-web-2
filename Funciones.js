@@ -35,7 +35,7 @@ MostrarDimencionesVentana()
 
 //Sistemas de modificaciones con alertas
 let notificacionesEnCola = [];
-let notificacionActiva = true;
+let notificacionActiva = false;
 function AgregarNotificacion(mensaje, duracion) {
     notificacionesEnCola.push({mensaje, duracion});
     if (!notificacionActiva){
@@ -56,9 +56,6 @@ function MostrarSiguienteNotificacion() {
     }
 }
 AgregarNotificacion('Primera notificacion', 5000);
-MostrarSiguienteNotificacion()
 AgregarNotificacion('Segunda notificacion', 5000);
-MostrarSiguienteNotificacion()
 AgregarNotificacion('Tercera notificacion', 5000);
-MostrarSiguienteNotificacion()
 
